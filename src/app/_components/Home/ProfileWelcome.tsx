@@ -15,7 +15,8 @@ function ProfileWelcome() {
         relative
         text-nowrap
         py-2
-        text-4xl 
+        text-4xl
+        font-bold 
         before:absolute
         before:inset-0
         
