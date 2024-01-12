@@ -1,20 +1,36 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        body: ["Bevan"],
+        typewrite: ["Source Code Pro"],
+      },
+      keyframes: {
+        fadeInOut: {
+          to: {
+            visibility: "hidden",
+          },
+        },
+        typewriter: {
+          to: {
+            left: "100%",
+          },
+        },
+      },
+      animation: {
+        titleBlink:
+          "fadeInOut 1s steps(2, start) infinite, typewriter 1s steps(var(--titleLength)) 1s forwards",
+        titleTyping: "typewriter 1s steps(var(--titleLength)) 1s forwards",
       },
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
