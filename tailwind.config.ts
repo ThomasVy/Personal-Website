@@ -25,6 +25,7 @@ const config: Config = {
         },
       },
       animation: {
+        blink: "fadeInOut 1s steps(2, start) infinite",
         titleBlink:
           "fadeInOut 1s steps(2, start) infinite, typewriter 1s steps(var(--titleLength)) 1s forwards",
         titleTyping: "typewriter 1s steps(var(--titleLength)) 1s forwards",

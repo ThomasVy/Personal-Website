@@ -13,11 +13,11 @@ function DisplayTyping({ text, style, duration }: DisplayTypingProps) {
 
   return (
     <div>
-      <motion.span className={`bold font-body ${style}`}>
+      <motion.span className={`bold font-typewrite ${style}`}>
         {displayText}
       </motion.span>
       <div
-        className={`animate-blink bold ${style} inline-block w-px font-body`}
+        className={`bold animate-blink ${style} font-typewrite inline-block w-px`}
       >
         |
       </div>

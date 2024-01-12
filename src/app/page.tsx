@@ -13,7 +13,7 @@ function RenderProfileWelcome() {
         ease: "easeInOut",
       }}
       key="profile"
-      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+      className="m-auto"
     >
       <ProfileWelcome />
     </motion.div>
