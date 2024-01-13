@@ -1,28 +1,39 @@
-function page() {
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+function ContactPage() {
   return (
     <>
-      <div className="flex flex-grow items-center justify-center">
-        <div className="">
-          <h1
-            className="font-typewrite 
-          relative 
-          w-max 
-          before:absolute 
-          before:inset-0 
-          before:animate-typing
-            before:bg-neutral-800 
-            after:absolute
-
-            after:inset-0 
-            after:w-1
-            after:animate-blink
-          after:bg-white"
-          >
-            Hello, my name is Thomas
-          </h1>
-        </div>
+      <div className="m-auto text-balance px-5 font-rubik text-3xl">
+        Best way to contact me?
+        <br />
+        <br />
+        <ul className="flex gap-3 md:flex-col">
+          <li>
+            <a
+              className="text-wrap hover:text-blue-500 hover:underline"
+              href="mailto:vythomas97@gmail.com"
+            >
+              ✉️
+              <span className="hidden md:inline-block">
+                &nbsp; vythomas97@gmail.com
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-wrap hover:text-blue-500 hover:underline"
+              href="https://www.linkedin.com/in/thomas-vy/"
+            >
+              <FontAwesomeIcon icon={faLinkedin} color="#0077B5" />
+              <span className="hidden md:inline-block">
+                &nbsp; https://www.linkedin.com/in/thomas-vy/
+              </span>
+            </a>
+          </li>
+        </ul>
       </div>
     </>
   );
 }
-export default page;
+export default ContactPage;
