@@ -1,18 +1,19 @@
-import Project from "./_components/Project";
+import { ProjectPreviewProps } from "./_components/Project";
 import Image from "next/image";
 import DisplayTyping from "@/app/_components/DisplayTyping";
+import ProjectList from "./_components/ProjectList";
 
-const PROJECTS = [
-  {
-    title: "Inventory Tracker",
-    technology: "Typescript, Express, MongoDB, Zod, TanStack Query",
-    image: <Image src="/React.png" width={32} height={32} alt="Image" />,
-  },
+const PROJECTS: ProjectPreviewProps[] = [
   {
     title: "Earth-Simulation",
     technology:
       "OpenGL, Mesh generation, Phong Reflections, Model View Projection matrix manipulations",
     image: <Image src="/Cpp.png" width={32} height={32} alt="Image" />,
+  },
+  {
+    title: "Inventory Tracker",
+    technology: "Typescript, Express, MongoDB, Zod, TanStack Query",
+    image: <Image src="/React.png" width={32} height={32} alt="Image" />,
   },
   {
     title: "Laravel Book Review",
@@ -69,7 +70,7 @@ const PROJECTS = [
   },
   {
     title: "Billard Game",
-    technology: "",
+    technology: "Game loop, animation",
     image: <Image src="/Processing_3.png" width={32} height={32} alt="Image" />,
   },
 ];
@@ -80,20 +81,12 @@ function page() {
       <h1 className="m-6 font-body text-3xl md:text-5xl">&lt;Projects /&gt;</h1>
       <div className="text-center">
         <DisplayTyping
-          text="Some projects that I've created in the past that I think you'll like"
-          style="text-md"
+          text="Some projects that you'll love"
+          style="text-sm md:text-lg"
           duration={3}
         />
       </div>
-      <ul className="mt-4 grid bg-slate-600 p-2 md:grid-cols-2">
-        {PROJECTS.map((project) => {
-          return (
-            <li key={project.title}>
-              <Project {...project} />
-            </li>
-          );
-        })}
-      </ul>
+      <ProjectList projects={PROJECTS} />
     </div>
   );
 }

@@ -17,9 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex min-h-svh flex-col bg-neutral-800 text-white">
+      <body className="relative flex min-h-svh flex-col bg-neutral-800 text-white">
         <NavBar />
-        <main className="relative flex flex-grow flex-col">{children}</main>
+        <main className="relative flex flex-grow flex-col font-rubik">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

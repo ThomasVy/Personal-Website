@@ -10,7 +10,6 @@ type DisplayTypingProps = {
 
 function DisplayTyping({ text, style, duration }: DisplayTypingProps) {
   const displayText = useTypingEffect(text, duration);
-
   return (
     <div>
       <motion.span className={`bold font-typewrite ${style}`}>

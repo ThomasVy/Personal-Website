@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         body: ["Bevan"],
         typewrite: ["Source Code Pro"],
+        rubik: ["Rubik"],
       },
       keyframes: {
         fadeInOut: {

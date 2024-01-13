@@ -1,4 +1,4 @@
-type ProjectPreviewProps = {
+export type ProjectPreviewProps = {
   title: string;
   technology: string;
   image: React.ReactNode;
@@ -6,15 +6,15 @@ type ProjectPreviewProps = {
 
 function ProjectPreview({ title, technology, image }: ProjectPreviewProps) {
   return (
-    <div className="group/item flex h-full gap-0 rounded p-4 text-center hover:cursor-pointer hover:bg-slate-500">
+    <div className="group/item flex h-full gap-0 rounded p-4 hover:cursor-pointer hover:bg-slate-500">
       <div>
-        <div className="flex items-center gap-2">
+        <div className="flex h-10 items-center gap-2 overflow-hidden">
           {image}
-          <h1 className="text-left text-lg font-bold leading-none">{title}</h1>
+          <h1 className="text-left text-sm font-semibold leading-none lg:text-lg">
+            {title}
+          </h1>
         </div>
-        <div>
-          <p className="mt-1 text-left text-xs">{technology}</p>
-        </div>
+        <p className="mt-1 text-left text-xs md:text-sm">{technology}</p>
       </div>
       <a className="group/edit invisible ml-auto flex self-center whitespace-nowrap rounded-full py-1 pl-4 pr-3 text-sm text-slate-700 transition hover:bg-slate-400 group-hover/item:visible">
         <span className="font-semibold transition group-hover/edit:text-slate-900">

@@ -70,9 +70,9 @@ const RIGHT_ITEMS: ITEM[] = [
     content: (
       <>
         <p>
-          I have been working at Cisco Systems Ltd. as a Software Engineer since
-          2021 where I help develop their C++ advanced maleware detection
-          product. Based in Calgary, AB, Canada.
+          I work at Cisco Systems Ltd. as a Software Engineer since 2021 where I
+          help develop their C++ advanced maleware detection. Based in Calgary,
+          AB, Canada.
         </p>
         <br />
         <p>
@@ -109,7 +109,7 @@ function AboutMe() {
           times: [0, 1],
           ease: "easeInOut",
         }}
-        className="relative -z-10 hidden h-[200px] flex-grow md:block"
+        className="relative -z-10 hidden h-[200px] flex-grow overflow-hidden md:block"
       >
         <Image src={nori} fill alt="Nori" />
       </motion.div>
