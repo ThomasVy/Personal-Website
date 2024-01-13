@@ -14,7 +14,7 @@ function useTypingEffect(text: string, duration: number) {
       ease: "easeInOut",
     });
     return controls.stop;
-  }, []);
+  }, [text, duration, count]);
 
   return displayText;
 }
