@@ -11,8 +11,8 @@ function BookReview() {
         A website for users to subscribe and submit book reviews. Books can only
         be reviewed by admins and users that were previously subscribed. Anyone
         can register as a new user to begin reviewing books. Admins can edit
-        users' information, unsubscribe or subscriber users to books, edit
-        authors' information, create new books, delete books, and edit book
+        users&apos; information, unsubscribe or subscriber users to books, edit
+        authors&apos; information, create new books, delete books, and edit book
         information. <br />
         Written in Laravel, HTML/CSS, PHP, MySQL.
       </p>
