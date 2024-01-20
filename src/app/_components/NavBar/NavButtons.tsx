@@ -14,7 +14,6 @@ type Path = {
 };
 
 const paths: Path[] = [
-  { title: "Home", link: "/" },
   { title: "About", link: "/about" },
   { title: "Projects", link: "/projects" },
   { title: "Contact Info", link: "/contact" },
