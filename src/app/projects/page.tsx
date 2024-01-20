@@ -3,7 +3,7 @@ import Image from "next/image";
 import DisplayTyping from "@/app/_components/DisplayTyping";
 import ProjectList from "./_components/ProjectList";
 import Cpp from "/public/Cpp.png";
-import ReactLogo from "/public/React.png";
+import ReactLogo from "/public/react.png";
 import Laravel from "/public/Laravel.png";
 import Python from "/public/python-logo-only.png";
 import Java from "/public/java.png";
