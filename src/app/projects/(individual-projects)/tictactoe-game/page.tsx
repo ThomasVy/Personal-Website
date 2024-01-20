@@ -11,8 +11,8 @@ function TicTacToe() {
         TicTacToe game using server and client communication over TCP sockets.
         Server starts and waits for two players to connect. Once two players
         connect, then the server asks for names and begins the match. Players
-        place X's or O's in turns until one player completes a
-        row/column/diagonal or when there's no legal moves left. <br />
+        place X&apos;s or O&apos;s in turns until one player completes a
+        row/column/diagonal or when there&apos;s no legal moves left. <br />
         Written in Java, TCP sockets.
       </p>
     </IndividualProjects>
