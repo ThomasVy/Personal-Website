@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import Card from "../_components/Card";
 import { ReactNode } from "react";
-import nori from "../../../public/1703130065052.jpg";
-import Image from "next/image";
 type ITEM = {
   title: string;
   content: ReactNode;
@@ -20,9 +18,8 @@ const LEFT_ITEMS: ITEM[] = [
         experienced in graphics programming and web development. <br />
         <br />
         <i className="text-sm font-bold text-gray-300">
-          Note: I am also a shameless cat dad. Her name is Nori
+          Note: I am also a shameless cat dad. 😸
         </i>
-        <span>😸</span>
       </p>
     ),
   },
@@ -70,13 +67,15 @@ const RIGHT_ITEMS: ITEM[] = [
     content: (
       <>
         <p>
-          I work at Cisco Systems Ltd. as a Software Engineer since 2021 where I
-          help develop their C++ advanced maleware detection. Based in Calgary,
-          AB, Canada.
+
+          Based in Calgary, AB, Canada. 🍁
+          I work at Cisco Systems Ltd. as a Endpoint Software Engineer since 2021 where I
+          develop their C++ advanced malware detection software and their data loss prevention software for Windows.
+          Other expertises include OpenGL programming, unit testing, containerization, and CI/CD.
         </p>
         <br />
         <p>
-          I previously worked at GEOSLOPE/SEEQUENT where I interned as a C++
+          I previously worked at GEOSLOPE/SEEQUENT where I interned as a C++ Windows
           developer working on their geotechnical solution suite. Based in
           Calgary, AB, Canada.
         </p>
@@ -89,10 +88,10 @@ const RIGHT_ITEMS: ITEM[] = [
       <div>
         A couple of languages that I have proficient knowledge
         <ul className="ml-1">
-          <li>C/C++ (C++20)</li>
+          <li>C/C++ (C++20/23)</li>
           <li>Python 3</li>
-          <li>React/NextJs</li>
-          <li>Typescript/Javascript</li>
+          <li>React19/NextJS</li>
+          <li>Typescript</li>
         </ul>
       </div>
     ),
@@ -102,17 +101,6 @@ const RIGHT_ITEMS: ITEM[] = [
 function AboutMe() {
   return (
     <div className="flex flex-col">
-      <motion.div
-        animate={{ opacity: [0, 1] }}
-        transition={{
-          duration: 2,
-          times: [0, 1],
-          ease: "easeInOut",
-        }}
-        className="relative -z-10 hidden h-[200px] flex-grow overflow-hidden md:block"
-      >
-        <Image src={nori} fill alt="Nori" />
-      </motion.div>
       <motion.div
         animate={{ opacity: [0, 0.5, 1], y: [100, 0, 0] }}
         transition={{

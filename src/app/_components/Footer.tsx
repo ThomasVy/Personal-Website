@@ -19,7 +19,7 @@ const CLICKABLE_ICONS: ClickIcon[] = [
 function Footer() {
   return (
     <footer>
-      <div className="mx-auto max-w-screen-xl px-4 py-6">
+      <div className="mx-auto fixed bottom-0 right-5 w-full px-4 py-6">
         <div className="flex justify-end gap-4">
           {CLICKABLE_ICONS.map((clickableIcon) => {
             return (
