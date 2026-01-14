@@ -2,7 +2,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import ProfileWelcome from "./_components/Home/ProfileWelcome";
 import { useEffect, useState } from "react";
-import AboutMe from "./about/page";
+import AboutMe from "./_components/AboutMe";
 
 function RenderProfileWelcome() {
   return (

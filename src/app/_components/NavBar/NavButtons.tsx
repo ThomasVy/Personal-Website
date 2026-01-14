@@ -14,7 +14,6 @@ type Path = {
 };
 
 const paths: Path[] = [
-  { title: "About", link: "/about" },
   { title: "Projects", link: "/projects" },
   { title: "Contact Info", link: "/contact" },
   {
@@ -64,9 +63,8 @@ function NavButtons() {
       </button>
 
       <div
-        className={`fixed inset-0 z-40 flex flex-col bg-gray-700 p-4 ring-gray-700 transition-all ${
-          openNav ? "translate-x-0" : "translate-x-full"
-        } w-full md:hidden`}
+        className={`fixed inset-0 z-40 flex flex-col bg-gray-700 p-4 ring-gray-700 transition-all ${openNav ? "translate-x-0" : "translate-x-full"
+          } w-full md:hidden`}
       >
         <div className="ml-auto">
           <button

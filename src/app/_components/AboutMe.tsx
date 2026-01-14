@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from "framer-motion";
 import Card from "./Card";
 import { ReactNode } from "react";
@@ -100,33 +98,31 @@ const RIGHT_ITEMS: ITEM[] = [
 
 function AboutMe() {
   return (
-    <div className="flex flex-col">
-      <motion.div
-        animate={{ opacity: [0, 0.5, 1], y: [100, 0, 0] }}
-        transition={{
-          duration: 2,
-          times: [0, 0.5, 1],
-          ease: "easeInOut",
-        }}
-        key="aboutMe"
-        className="mx-6 mt-6 grid max-w-screen-md flex-grow gap-4 md:mx-auto md:grid-cols-2"
-      >
-        <div id="leftAbout" className="flex flex-col gap-4">
-          {LEFT_ITEMS.map((item) => (
-            <Card key={item.title} title={item.title}>
-              {item.content}
-            </Card>
-          ))}
-        </div>
-        <div id="rightAbout" className="flex flex-col gap-4">
-          {RIGHT_ITEMS.map((item) => (
-            <Card key={item.title} title={item.title}>
-              {item.content}
-            </Card>
-          ))}
-        </div>
-      </motion.div>
-    </div>
+    <motion.div
+      animate={{ opacity: [0, 0.5, 1], y: [100, 0, 0] }}
+      transition={{
+        duration: 2,
+        times: [0, 0.5, 1],
+        ease: "easeInOut",
+      }}
+      key="aboutMe"
+      className="mx-6 mt-6 grid max-w-screen-md flex-grow gap-4 md:mx-auto md:grid-cols-2"
+    >
+      <div id="leftAbout" className="flex flex-col gap-4">
+        {LEFT_ITEMS.map((item) => (
+          <Card key={item.title} title={item.title}>
+            {item.content}
+          </Card>
+        ))}
+      </div>
+      <div id="rightAbout" className="flex flex-col gap-4">
+        {RIGHT_ITEMS.map((item) => (
+          <Card key={item.title} title={item.title}>
+            {item.content}
+          </Card>
+        ))}
+      </div>
+    </motion.div>
   );
 }
 export default AboutMe;
